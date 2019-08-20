@@ -1,0 +1,18 @@
+@for $i from 1 through 10 
+  .locomotive-section:nth-child(#{$i + 1}) 
+    background-color: hsla($i * 60, 100%, 50%, 1)
+    // img 
+    //   margin-left: $i * 100px * random(2)
+
+.locomotive-section
+  position: relative
+  height: 80vh
+  padding: 30px
+  display: flex
+  justify-content: center
+  overflow: hidden
+  img 
+    max-height: 100%
+    display: block
+
+@import 'node_modules/locomotive-scroll/dist/locomotive-scroll'

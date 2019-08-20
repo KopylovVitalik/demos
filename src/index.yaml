@@ -1,0 +1,21 @@
+ProjectTitle: stripes
+
+PageList:
+- file: page.html
+  ready: 50
+- file: many-cubes.html
+  ready: 50
+- file: morphing-cube.html
+  ready: 50
+- file: mousemove.html
+  ready: 50
+- file: curtains.html
+  ready: 50
+- file: blobs.html
+  ready: 50
+- file: texture.html
+  ready: 50
+- file: scroll.html
+  ready: 50
+- file: p5basics.html
+  ready: 50

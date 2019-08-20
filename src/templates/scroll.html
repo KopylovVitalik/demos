@@ -1,0 +1,56 @@
+---
+title: Locomotive scroll page
+---
+
+{% extends "layouts/_layout.html" %} 
+{% block content %}
+<div id="scroll-container" data-scroll-section>
+  <section class="locomotive-section">
+    <img
+      src="./img/car_1.jpg"
+      alt=""
+      data-scroll
+      data-scroll-speed="2"
+      data-scroll-direction="horizontal"
+    />
+  </section>
+  <section
+    class="locomotive-section"
+  >
+    <img
+      src="./img/car_2.jpg"
+      alt=""
+      data-scroll
+      data-scroll-speed="2"
+      data-scroll-delay="0.1"
+    />
+  </section>
+  <section class="locomotive-section">
+    <img
+      src="./img/car_3.jpg"
+      alt=""
+      data-scroll
+      data-scroll-speed="-2"
+
+    />
+  </section>
+  <section class="locomotive-section">
+    <img
+      src="./img/car_4.jpg"
+      alt=""
+      data-scroll
+      data-scroll-speed="-4"
+      data-scroll-direction="horizontal"
+    />
+  </section>
+  <section class="locomotive-section">
+    <img
+      src="./img/car_5.jpg"
+      alt=""
+      data-scroll
+      data-scroll-speed="2"
+      data-scroll-direction="horizontal"
+    />
+  </section>
+</div>
+{% endblock %}
