@@ -4,5 +4,12 @@ title: Index page
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-	<div id="cubes-container"></div>
+  <div id="cubes-container"></div>
+  <div data-scroll>
+    {% for item in range(0,10) %}
+      <section style="background-color: hsl({{ loop.index * 20 }}, 100%, 50%); height: 30vh;"></section>
+    {% endfor %}
+    <section style="background-color: hsl(300, 100%, 50%); height: 30vh;"></section>
+  </div>
+  
 {% endblock %}

@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import * as dat from 'dat.gui';
 import { TimelineMax } from 'gsap';
 var OrbitControls = require('three-orbit-controls')(THREE);
+import ScrollOut from 'scroll-out';
 
 let camera, scene, renderer, cube, light, light1, controls;
 let cubes = [];
@@ -10,6 +11,7 @@ const cubesNumber = 2000;
 function init() {
   // Init scene
   scene = new THREE.Scene();
+  // scene.background = new THREE.Color(0x000000, 0);
 
   // Init camera (PerspectiveCamera)
   camera = new THREE.PerspectiveCamera(
@@ -20,7 +22,7 @@ function init() {
   );
 
   // Init renderer
-  renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
   // Set size (whole window)
   renderer.setSize(window.innerWidth, window.innerHeight);
@@ -34,9 +36,9 @@ function init() {
     const geometry = new THREE.BoxGeometry(3, 3, 3);
     // const material = new THREE.MeshNormalMaterial();
     let material = new THREE.MeshPhongMaterial({
-      shininess: 60,
+      shininess: 100,
       transparent: true,
-      opacity: 0.75
+      opacity: 0.85
     });
     cube = new THREE.Mesh(geometry, material);
     const pos = randomSpherePoint(0, 0, 0, 100);
@@ -64,14 +66,13 @@ function init() {
   scene.add(light, light1);
 
   // Position camera
-  camera.position.z = 120;
+  camera.position.z = 420;
 
-  controls = new OrbitControls(camera, renderer.domElement);
-  // controls.dispose();
+  // controls = new OrbitControls(camera, renderer.domElement);
 
-  controls.enableDamping = true;
-  controls.dampingFactor = 0.75;
-  controls.rotateSpeed = 0.25;
+  // controls.enableDamping = true;
+  // controls.dampingFactor = 0.75;
+  // controls.rotateSpeed = 0.25;
   // controls.addEventListener( 'change', animate );
 
   // var sphereGeometry = new THREE.SphereGeometry(50, 32, 32);
@@ -98,7 +99,7 @@ function animate() {
   // Rotate cube (Change values to change speed)
   // cube.rotation.x += 0.01;
   // cube.rotation.y += 0.01;
-  controls.update();
+  // controls.update();
   renderer.render(scene, camera);
 }
 
@@ -202,3 +203,52 @@ function shuffleCubes() {
 //     el.position.z += 1;
 //   }
 // }
+
+// ScrollOut({
+//   cssProps: {
+//     offsetY: true,
+//     viewportY: true
+//   },
+//   onShown: function(element, ctx, scrollingElement) {
+//     /* Triggered when an element is shown */
+//   },
+//   onHidden: function(element, ctx, scrollingElement) {
+//     /* Triggered when an element is hidden */
+//   },
+//   onChange: function(element, ctx, scrollingElement) {
+//     // console.log(ctx.intersectY, ctx.viewportY);
+//     console.log(ctx);
+//   }
+// });
+import {
+  watchViewport,
+  unwatchViewport,
+  getViewportState,
+  recalibrateOrientation
+} from 'tornis';
+
+const updateValues = ({ size, scroll, mouse, position, orientation }) => {
+  if (size.changed) {
+    // do something related to size
+  }
+
+  if (scroll.changed) {
+    console.log(scroll);
+  }
+
+  if (mouse.changed) {
+    // do something related to mouse position or velocity
+  }
+
+  if (position.changed) {
+    // do something related to browser window position or velocity
+  }
+
+  if (orientation.changed) {
+    // do something related to device orientation
+  }
+};
+
+// bind the watch function
+// By default this will run the function as it is added to the watch list
+watchViewport(updateValues);

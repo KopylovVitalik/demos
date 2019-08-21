@@ -5,7 +5,7 @@
 // import './_locomotive-scroll';
 // import './_stats';
 
-// import './_many-cubes';
+import './_many-cubes';
 // import './_morphing-cube';
 // import './_p5basics';
-import './_curtains-script';
+// import './_curtains-script';
