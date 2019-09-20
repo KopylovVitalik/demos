@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Request password reset</title>
+	<link href="/assets/8546e052/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700,900&amp;amp;amp;subset=cyrillic"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;amp;amp;subset=cyrillic"
+		rel="stylesheet">
+	<meta name="csrf-param" content="_csrf">
+	<meta name="csrf-token"
+		content="S6CxLsID3Xn3uv64dHMlzLPfJixp1-e6Wdz8Bwb9hUoplfxinVCvTqbTzt0FKUS4-b5LQy-Tl4k065d9dqnxGg==">
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="content">
+			<header class="header">
+				<div class="container">
+					<div class="header__wrapper">
+						<div class="logo header__logo">
+							<div class="img-container logo__img-container"><a class="link-wrapper" href="/"><img
+                                            class="logo__image" src="/img/GH_logo_RGB.svg"
+                                            alt="Gambler Hunt Logo"/></a></div>
+						</div>
+						<nav class="nav header__nav">
+							<button class="button button--transparent nav__button"><span class="nav__burger"></span>
+                            </button>
+							<ul class="nav__list">
+								<li class="nav__item"><a class="link nav__link" href="#">Brands</a>
+									<ul class="nav__drop-list">
+										<li class="nav__drop-item"><a class="link nav__drop-link"
+												href="/site/bootlegger">Bootlegger</a></li>
+										<li class="nav__drop-item"><a class="link nav__drop-link"
+												href="/site/bosscasino">Bosscasino</a></li>
+										<li class="nav__drop-item"><a class="link nav__drop-link"
+												href="/site/slotoboss">Slotoboss</a></li>
+
+									</ul>
+								</li>
+								<li class="nav__item"><a class="link nav__link" href="/#about">About Us</a></li>
+								<li class="nav__item"><a class="link nav__link" href="/site/news">News</a></li>
+								<li class="nav__item"><a class="link nav__link" href="/site/comission">Commission</a>
+								</li>
+								<li class="nav__item"><a class="link nav__link" href="/site/faq">FAQ</a></li>
+								<li class="nav__item"><a class="link nav__link" href="/site/tandc">T&C</a></li>
+								<li class="nav__item"><a class="link nav__link" href="/#contacts-section">Contacts</a>
+								</li>
+								<li class="nav__item"><a class="link nav__link" href="/site/privacy-policy">Privacy
+										Policy</a></li>
+							</ul>
+						</nav>
+						<div class="log-in header__log-in">
+							<button class="button log-in__button">Sign In/Sign Up</button>
+							<div class="drop-down">
+								<form id="login-form" class="login-form log-in__form"
+									action="https://dashboard.gamblerhunt.com/sign-in/login" method="post">
+									<input type="hidden" name="_csrf" value="S6CxLsID3Xn3uv64dHMlzLPfJixp1-e6Wdz8Bwb9hUoplfxinVCvTqbTzt0FKUS4-b5LQy-Tl4k065d9dqnxGg==">
+									<div class="form-group field-loginform-username">
+
+										<input type="text" id="loginform-username" class="login-form__input" name="LoginForm[username]" value="" placeholder="Login">
+
+										<div class="help-block"></div>
+									</div>
+									<div class="form-group field-loginform-password required">
+
+										<input type="password" id="loginform-password" class="login-form__input" name="LoginForm[password]" value="" placeholder="Password" aria-required="true">
+
+										<div class="help-block"></div>
+									</div>
+									<div class="col-xs-12 remember_me">
+										<!--                                    -->
+										<label><input type="checkbox" id="loginform-rememberme" name="LoginForm[rememberMe]" value="1" checked="" style="position: relative;top: 2px;"> Remember me</label>
+									</div>
+
+									<div class="form-group login_but">
+										<button type="submit" class="login-form__button button" name="login-button">Login</button>
+									</div>
+
+
+									<div class="forgot_pass" style="color:#999;margin:1em 0">
+										<a href="/user/sign-in/request-password-reset">Forgot your password?</a> </div>
+									<p class="login-form__join"><span class="login-form__member">NOT A MEMBER?</span><a
+											class="link link--light login-form__join-link mfp-open" href="#"
+											data-mfp-src="#reg-form-popup">join now</a></p>
+									<!--            <div class="form-group">-->
+									<!--                -->
+									<!--            </div>-->
+									<!--            <h2>-->
+									<!--:</h2>-->
+									<!--            <div class="form-group">-->
+									<!--                -->
+									<!--            </div>-->
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="">
+
+				<ul class="breadcrumb">
+					<li><a href="https://gamblerhunt.com">Home</a></li>
+					<li class="active">Request password reset</li>
+				</ul>
+
+				<!-- Example of your ads placing -->
+
+				<div class="site-request-password-reset">
+
+					<div class="container">
+
+
+						<div class="row log_block">
+							<div class="col-xs-12 col-md-4 form_login">
+								<div class="block-register">
+									<div class="title">
+										<h1>FORGOT PASSWORD</h1>
+									</div>
+									<p class="col-xs-12 pass_desc ">
+										Enter your mail address</br> and we send you instructions</br> to sing in
+									</p>
+
+									<form id="request-password-reset-form" action="/user/sign-in/request-password-reset"
+										method="post">
+										<input type="hidden" name="_csrf" value="S6CxLsID3Xn3uv64dHMlzLPfJixp1-e6Wdz8Bwb9hUoplfxinVCvTqbTzt0FKUS4-b5LQy-Tl4k065d9dqnxGg==">
+										<div class="form-group field-passwordresetrequestform-email required">
+
+											<input type="text" id="passwordresetrequestform-email" class="form-control" name="PasswordResetRequestForm[email]" placeholder="Email" aria-required="true">
+
+											<div class="help-block"></div>
+										</div>
+										<div class="form-group login_but">
+											<button type="submit" class="red-button btn btn-primary">Send</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<p class="footer__text">Copyright 2019 &copy; All Rights Reserved. gamblerhant.com is
+				owned and operated by Boss Gaming Group N.V. and Boliviena Holdings Ltd.</p>
+		</div>
+	</footer>
+
+
+	<div class="reg-form-popup mfp-hide " id="reg-form-popup">
+
+		<form id="form-signup" class="reg-form" action="/user/sign-in/ajax-sign-up" method="post">
+			<input type="hidden" name="_csrf" value="S6CxLsID3Xn3uv64dHMlzLPfJixp1-e6Wdz8Bwb9hUoplfxinVCvTqbTzt0FKUS4-b5LQy-Tl4k065d9dqnxGg==">
+			<div class="reg-form__top">
+				<h2 class="reg-form__title">registration form</h2>
+			</div>
+			<div class="reg-form__bottom">
+				<div class="reg-form__wrapper">
+					<div class="reg-form__left">
+						<div class="reg-form__group">
+							<label class="reg-form__label" for="#userprofile-firstname">First name*</label>
+							<div class="form-group field-userprofile-firstname required">
+
+								<input type="text" id="userprofile-firstname" class="form-control" name="UserProfile[firstname]" placeholder="First name" aria-required="true">
+
+								<p class="help-block help-block-error"></p>
+							</div>
+						</div>
+						<div class="reg-form__group">
+							<label class="reg-form__label" for="#lastname">Last name*</label>
+							<div class="form-group field-userprofile-lastname required">
+
+								<input type="text" id="userprofile-lastname" class="form-control" name="UserProfile[lastname]" placeholder="Last name" aria-required="true">
+
+								<p class="help-block help-block-error"></p>
+							</div>
+						</div>
+						<div class="reg-form__group">
+							<label class="reg-form__label" for="#signupform-username">User name*</label>
+							<div class="form-group field-signupform-username required">
+
+								<input type="text" id="signupform-username" class="form-control" name="SignupForm[username]" placeholder="Username" aria-required="true">
+
+								<p class="help-block help-block-error"></p>
+							</div>
+						</div>
+						<div class="reg-form__group">
+							<label class="reg-form__label" for="#signupform-email">Email*</label>
+							<div class="form-group field-signupform-email required">
+
+								<input type="text" id="signupform-email" class="form-control" name="SignupForm[email]" placeholder="Email" aria-required="true">
+
+								<p class="help-block help-block-error"></p>
+							</div>
+						</div>
+						<div class="reg-form__group">
+							<label class="reg-form__label" for="#signupform-password">Password*</label>
+							<div class="form-group field-signupform-password required">
+
+								<input type="password" id="signupform-password" class="form-control" name="SignupForm[password]" placeholder="Password" aria-required="true">
+
+								<p class="help-block help-block-error"></p>
+							</div>
+						</div>
+						<div class="reg-form__group">
+							<label class="reg-form__label" for="#signupform-password_repeat">Password repeat*</label>
+							<div class="form-group field-signupform-password_repeat required">
+
+								<input type="password" id="signupform-password_repeat" class="form-control" name="SignupForm[password_repeat]" placeholder="Password repeat" aria-required="true">
+
+								<p class="help-block help-block-error"></p>
+							</div>
+						</div>
+						<div class="reg-form__group">
+							<div class="form-group field-signupform-brand_url">
+
+								<input type="hidden" id="signupform-brand_url" class="form-control" name="SignupForm[brand_url]" value="https://gamblerhunt.com">
+
+								<p class="help-block help-block-error"></p>
+							</div>
+						</div>
+
+					</div>
+					<div class="reg-form__right">
+						<div class="reg-form__group">
+							<label class="reg-form__label" for="#userprofile-country">Country*</label>
+							<div class="form-group field-userprofile-country required">
+
+								<input type="text" id="userprofile-country" class="form-control" name="UserProfile[country]" placeholder="Country" aria-required="true">
+
+								<p class="help-block help-block-error"></p>
+							</div>
+						</div>
+						<div class="reg-form__group">
+							<label class="reg-form__label" for="#userprofile-city">City*</label>
+							<div class="form-group field-userprofile-city required">
+
+								<input type="text" id="userprofile-city" class="form-control" name="UserProfile[city]" placeholder="city" aria-required="true">
+
+								<p class="help-block help-block-error"></p>
+							</div>
+						</div>
+						<div class="reg-form__group">
+							<label class="reg-form__label" for="#userprofile-address">Address*</label>
+							<div class="form-group field-userprofile-address required">
+
+								<input type="text" id="userprofile-address" class="form-control" name="UserProfile[address]" placeholder="Address" aria-required="true">
+
+								<p class="help-block help-block-error"></p>
+							</div>
+						</div>
+						<div class="reg-form__group">
+							<label class="reg-form__label" for="#userprofile-phone">Phone*</label>
+							<div class="form-group field-userprofile-phone required">
+
+								<input type="text" id="userprofile-phone" class="form-control" name="UserProfile[phone]" placeholder="Phone" aria-required="true">
+
+								<p class="help-block help-block-error"></p>
+							</div>
+						</div>
+						<div class="reg-form__group">
+							<label class="reg-form__label" for="#userprofile-skype">Skype*</label>
+							<div class="form-group field-userprofile-skype required">
+
+								<input type="text" id="userprofile-skype" class="form-control" name="UserProfile[skype]" placeholder="Skype" aria-required="true">
+
+								<p class="help-block help-block-error"></p>
+							</div>
+						</div>
+						<div class="reg-form__group">
+							<label class="reg-form__label" for="#userprofile-site">Site*</label>
+							<div class="form-group field-userprofile-site required">
+
+								<input type="text" id="userprofile-site" class="form-control" name="UserProfile[site]" placeholder="Website" aria-required="true">
+
+								<p class="help-block help-block-error"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reg-form__checkboxes">
+					<div class="reg-form__checkbox-group">
+						<input class="reg-form__checkbox" type="checkbox" id="terms" name="terms" value=""
+                   required="required"/>
+						<label class="reg-form__checkbox-label" for="terms"><a href="/site/tandc" target="_blank">I agree and accept
+                    Terms and Conditions*</a></label>
+						<div class="help-block"></div>
+					</div>
+					<div class="reg-form__checkbox-group">
+						<input class="reg-form__checkbox" type="checkbox" id="dpp" name="dpp" value="" required="required"/>
+						<label class="reg-form__checkbox-label" for="dpp"><a href="/site/privacy-policy" target="_blank">I agree
+                    with Data Protection Policy*</a></label>
+						<div class="help-block"></div>
+					</div>
+					<div class="reg-form__checkbox-group">
+						<!--                    <input class="reg-form__checkbox" type="checkbox" id="promotions" name="promotions" value="1"  checked/>-->
+						<div class="form-group field-promotions">
+							<div class="checkbox">
+								<label class="reg-form__checkbox-label" for="promotions">
+<input type="hidden" name="UserProfile[promo]" value="0"><input type="checkbox" id="promotions" name="UserProfile[promo]" value="1" checked ="checked" style="float: left; margin-right: 5px;">
+I would like to receive promotions
+</label>
+								<p class="help-block help-block-error"></p>
+
+							</div>
+						</div>
+						<!--                    <label class="reg-form__checkbox-label" for="promotions">I would like to receive promotions</label>-->
+					</div>
+				</div>
+				<div class="text-right col-xs-12 form-group">
+					<button type="submit" class="button reg-form__button" name="signup-button">Signup</button>
+					<!--                <button type="button" class="button reg-form__button" name="signup-button">SignUp</button>-->
+				</div>
+				<div class="reg-form__log-in">
+					<div class="reg-form__member">Already a member?</div>
+					<a class="link link--light reg-form__link" href="#">log in</a>
+				</div>
+			</div>
+		</form><button class="button mfp-close">×</button>
+	</div>
+	<div class="forgot-form-popup mfp-hide" id="forgot-form-popup">
+		<form class="forgot-form" id="forgot-form">
+			<h3 class="forgot-form__title">Forgot Password?</h3>
+			<div class="img-container forgot-form__img-container"><img class="forgot-form__image" src="images/lock.png"
+                                                                       alt="Lock"/></div>
+				<div class="forgot-form__desc">Enter your mail address and we send you instructions to sign in</div>
+				<div class="forgot-form__group">
+					<input class="forgot-form__input" type="email" id="forgot-pass-mail" name="Email" placeholder="Email"
+                       value="" required="required"/>
+            </div>
+					<button class="button forgot-form__button">Send</button>
+		</form>
+		<button class="button forgot-form-popup__button mfp-close">×</button>
+	</div>
+	<div class="forgot-success-popup" id="forgot-success-popup">
+		<h3 class="forgot-success-popup__title">Forgot Password?</h3>
+		<div class="img-container forgot-success-popup__img-container"><img class="forgot-success-popup__image"
+                                                                            src="images/success.png" alt="Success"/>
+        </div>
+			<div class="forgot-success-popup__desc">We just sent an email to «johnatan.doe@gmail.com»</div>
+			<div class="forgot-success-popup__spam">If you didn’t receive an email, check your Spam folder</div>
+			<a class="button forgot-success-popup__link" href="#" id="forgot-success-popup-link">Login</a>
+			<button class="button forgot-success-popup__button">×</button>
+		</div>
+		<script src="/assets/4a1c7d84/jquery.js"></script>
+		<script src="/assets/46ff70e4/yii.js"></script>
+		<script src="/assets/46ff70e4/yii.validation.js"></script>
+		<script src="/assets/46ff70e4/yii.activeForm.js"></script>
+		<!--[if lt IE 9]>
+<script src="/assets/b2ee38b5/dist/html5shiv.min.js"></script>
+<![endif]-->
+		<script src="/js/app.js"></script>
+		<script src="/js/libs.min.js"></script>
+		<script src="/js/scripts.min.js"></script>
+		<script src="/js/login.js"></script>
+		<script src="/js/privacy_policy_dialog_min.js"></script>
+		<script>
+			jQuery(function ($) {
+jQuery('#request-password-reset-form').yiiActiveForm([{"id":"passwordresetrequestform-email","name":"email","container":".field-passwordresetrequestform-email","input":"#passwordresetrequestform-email","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, [], value);yii.validation.required(value, messages, {"message":"E-mail cannot be blank."});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"E-mail is not a valid email address.","enableIDN":false,"skipOnEmpty":1});}}], []);
+jQuery('#login-form').yiiActiveForm([{"id":"loginform-password","name":"password","container":".field-loginform-password","input":"#loginform-password","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Password cannot be blank."});}}], []);
+jQuery('#form-signup').yiiActiveForm([{"id":"userprofile-firstname","name":"firstname","container":".field-userprofile-firstname","input":"#userprofile-firstname","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Firstname cannot be blank."});yii.validation.string(value, messages, {"message":"Firstname must be a string.","max":255,"tooLong":"Firstname should contain at most 255 characters.","skipOnEmpty":1});}},{"id":"userprofile-lastname","name":"lastname","container":".field-userprofile-lastname","input":"#userprofile-lastname","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Lastname cannot be blank."});yii.validation.string(value, messages, {"message":"Lastname must be a string.","max":255,"tooLong":"Lastname should contain at most 255 characters.","skipOnEmpty":1});}},{"id":"signupform-username","name":"username","container":".field-signupform-username","input":"#signupform-username","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, [], value);yii.validation.required(value, messages, {"message":"Username cannot be blank."});yii.validation.string(value, messages, {"message":"Username must be a string.","min":2,"tooShort":"Username should contain at least 2 characters.","max":255,"tooLong":"Username should contain at most 255 characters.","skipOnEmpty":1});}},{"id":"signupform-email","name":"email","container":".field-signupform-email","input":"#signupform-email","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, [], value);yii.validation.required(value, messages, {"message":"E-mail cannot be blank."});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"E-mail is not a valid email address.","enableIDN":false,"skipOnEmpty":1});}},{"id":"signupform-password","name":"password","container":".field-signupform-password","input":"#signupform-password","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Password cannot be blank."});yii.validation.string(value, messages, {"message":"Password must be a string.","min":6,"tooShort":"Password should contain at least 6 characters.","skipOnEmpty":1});}},{"id":"signupform-password_repeat","name":"password_repeat","container":".field-signupform-password_repeat","input":"#signupform-password_repeat","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Password Repeat cannot be blank."});yii.validation.string(value, messages, {"message":"Password Repeat must be a string.","min":6,"tooShort":"Password Repeat should contain at least 6 characters.","skipOnEmpty":1});yii.validation.compare(value, messages, {"operator":"==","type":"string","compareAttribute":"signupform-password","compareAttributeName":"SignupForm[password]","skipOnEmpty":1,"message":"Passwords don't match"}, $form);}},{"id":"signupform-brand_url","name":"brand_url","container":".field-signupform-brand_url","input":"#signupform-brand_url","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Brand Url must be a string.","skipOnEmpty":1});}},{"id":"userprofile-country","name":"country","container":".field-userprofile-country","input":"#userprofile-country","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Country cannot be blank."});yii.validation.string(value, messages, {"message":"Country must be a string.","max":255,"tooLong":"Country should contain at most 255 characters.","skipOnEmpty":1});}},{"id":"userprofile-city","name":"city","container":".field-userprofile-city","input":"#userprofile-city","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"City cannot be blank."});yii.validation.string(value, messages, {"message":"City must be a string.","max":255,"tooLong":"City should contain at most 255 characters.","skipOnEmpty":1});}},{"id":"userprofile-address","name":"address","container":".field-userprofile-address","input":"#userprofile-address","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Address cannot be blank."});yii.validation.string(value, messages, {"message":"Address must be a string.","max":255,"tooLong":"Address should contain at most 255 characters.","skipOnEmpty":1});}},{"id":"userprofile-phone","name":"phone","container":".field-userprofile-phone","input":"#userprofile-phone","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Phone cannot be blank."});yii.validation.string(value, messages, {"message":"Phone must be a string.","max":255,"tooLong":"Phone should contain at most 255 characters.","skipOnEmpty":1});}},{"id":"userprofile-skype","name":"skype","container":".field-userprofile-skype","input":"#userprofile-skype","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Skype cannot be blank."});yii.validation.string(value, messages, {"message":"Skype must be a string.","max":255,"tooLong":"Skype should contain at most 255 characters.","skipOnEmpty":1});}},{"id":"userprofile-site","name":"site","container":".field-userprofile-site","input":"#userprofile-site","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Site cannot be blank."});yii.validation.string(value, messages, {"message":"Site must be a string.","max":255,"tooLong":"Site should contain at most 255 characters.","skipOnEmpty":1});}},{"id":"userprofile-promo","name":"promo","container":".field-promotions","input":"#promotions","error":".help-block.help-block-error","enableAjaxValidation":true,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Promo must be a string.","max":255,"tooLong":"Promo should contain at most 255 characters.","skipOnEmpty":1});}}], []);
+});
+		</script>
+</body>
+
+</html>
