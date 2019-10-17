@@ -68,11 +68,11 @@ function init() {
   // Position camera
   camera.position.z = 420;
 
-  // controls = new OrbitControls(camera, renderer.domElement);
+  controls = new OrbitControls(camera, renderer.domElement);
 
-  // controls.enableDamping = true;
-  // controls.dampingFactor = 0.75;
-  // controls.rotateSpeed = 0.25;
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.75;
+  controls.rotateSpeed = 0.25;
   // controls.addEventListener( 'change', animate );
 
   // var sphereGeometry = new THREE.SphereGeometry(50, 32, 32);
@@ -99,7 +99,7 @@ function animate() {
   // Rotate cube (Change values to change speed)
   // cube.rotation.x += 0.01;
   // cube.rotation.y += 0.01;
-  // controls.update();
+  controls.update();
   renderer.render(scene, camera);
 }
 
