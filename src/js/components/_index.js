@@ -13,4 +13,6 @@
 
 // import './_obj-loader';
 // import './_gltf-loader';
-import './_thunder-loader';
+// import './_thunder-loader';
+// import './_flash-loader';
+import './_canvas-particles';
