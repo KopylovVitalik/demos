@@ -12,4 +12,5 @@
 // import './_curtains-script';
 
 // import './_obj-loader';
-import './_gltf-loader';
+// import './_gltf-loader';
+import './_thunder-loader';
