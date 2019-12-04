@@ -6,7 +6,7 @@
 // import './_stats';
 
 // import './_many-cubes';
-import './_many-cubes-2';
+// import './_many-cubes-2';
 // import './_morphing-cube';
 // import './_p5basics';
 // import './_curtains-script';
@@ -14,3 +14,5 @@ import './_many-cubes-2';
 // import './_obj-loader';
 // import './_gltf-loader';
 // import './_flash-loader';
+
+import './_gradient-cube';
