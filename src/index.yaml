@@ -19,3 +19,5 @@ PageList:
   ready: 50
 - file: p5basics.html
   ready: 50
+- file: canvas-particles.html
+  ready: 50
