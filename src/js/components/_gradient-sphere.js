@@ -41,7 +41,8 @@ function init() {
 
   // geometry
   // var geometry = new THREE.CubeGeometry( 1,1,1 );
-  var geometry = new THREE.SphereGeometry(2, 32, 64);
+  var geometry = new THREE.TorusGeometry( 10, 4, 8, 200, 5 );
+  // var geometry = new THREE.SphereGeometry(2, 32, 64);
   // for ( var i = 0; i < geometry.faces.length; i ++ ) {
   //   geometry.faces[ i ].color.setHex( Math.random() * 0xffffff );
   // }
@@ -57,6 +58,7 @@ function init() {
   var material = new THREE.MeshBasicMaterial({
     map: texture,
     overdraw: 0.5,
+    side: THREE.DoubleSide
     // wireframe: true
   });
   // var material = new THREE.MeshBasicMaterial( { color: 0xffffff, vertexColors: THREE.FaceColors } );

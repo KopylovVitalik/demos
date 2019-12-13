@@ -17,5 +17,6 @@
 // import './_flash-loader';
 
 // import './_gradient-cube';
-import './_gradient-sphere';
+// import './_gradient-sphere';
 // import './_canvas-particles';
+import './_tor';
